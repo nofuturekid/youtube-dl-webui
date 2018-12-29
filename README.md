@@ -1,4 +1,7 @@
+[hub]: https://hub.docker.com/r/nofuturekid/youtube-dl-webui/
+
 # youtube-dl-webui
+[![](https://images.microbadger.com/badges/version/nofuturekid/youtube-dl-webui.svg)][hub][![](https://images.microbadger.com/badges/image/nofuturekid/youtube-dl-webui.svg)](https://microbadger.com/images/nofuturekid/youtube-dl-webui "Get your own image badge on microbadger.com")[![](https://img.shields.io/docker/pulls/nofuturekid/youtube-dl-webui.svg)][hub][![](https://img.shields.io/docker/stars/nofuturekid/youtube-dl-webui.svg)][hub]
 
 Another webui for youtube-dl powered by Flask.
 
@@ -15,10 +18,6 @@ server is needly inevitably. This complexes service deployment and makes it not
 very 'light'.
 
 **issues** are welcomed!
-
-# Screenshot
-
-![screenshot1](screen_shot/1.gif)
 
 # Prerequisite
 
@@ -57,15 +56,8 @@ A server will be started locally. The default port is **5000**.
 **Note**, you have to remove proxy configuration option in your config file. I
 write it here for illustrating all valid config options.
 
-# Docker image
-
-There also exists a docker image to easy the deployment. Check [HERE][4] for
-more.
-
 ---
 
 [1]: https://github.com/rg3/youtube-dl
 [2]: https://github.com/avignat/Youtube-dl-WebUI
 [3]: https://github.com/pallets/flask
-[4]: https://hub.docker.com/r/d0u9/youtube-dl-webui/
-
