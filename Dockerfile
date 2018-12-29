@@ -1,5 +1,21 @@
 FROM amd64/python:3-alpine3.8
 
+# set version label
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
+LABEL org.label-schema.build-date=${BUILD_DATE} \
+      org.label-schema.name="youtube-dl-webui" \
+      org.label-schema.description="Another webui for youtube-dl powered by Flask." \
+      org.label-schema.url="https://hub.docker.com/r/nofuturekid/youtube-dl-webui" \
+      org.label-schema.vcs-ref=${VCS_REF} \
+      org.label-schema.vcs-url="https://github.com/nofuturekid/youtube-dl-webui" \
+      org.label-schema.vendor="nofuturekid" \
+      org.label-schema.version=$VERSION \
+      org.label-schema.schema-version="1.0"
+LABEL maintainer="nofuturekid"
+
 # Install bash, ffmpeg, gosu
 #
 RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
