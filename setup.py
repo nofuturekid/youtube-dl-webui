@@ -18,12 +18,18 @@ setup (
         include_package_data=True,
         zip_safe=False,
         install_requires=[
-            'Flask>=0.2',
-            'youtube-dl',
+                'youtube-dl',
+                'Flask==1.0.2',
+                'Click==7.0',
+                'Flask-Login==0.4.1',
+                'itsdangerous==0.24',
+                'Jinja2==2.10',
+                'MarkupSafe==1.0',
+                'Werkzeug==0.14.1',
         ],
         entry_points={
-            'console_scripts': [
-                'youtube-dl-webui = youtube_dl_webui:main'
-            ]
+                'console_scripts': [
+                        'youtube-dl-webui = youtube_dl_webui:main'
+                ]
         },
 )
