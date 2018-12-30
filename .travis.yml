@@ -9,7 +9,10 @@ python:
 # command to install dependencies
 install:
   - python setup.py install
+  - mkdir /config
+  - mkdir /downloads
+  - cp /usr/share/youtube_dl_webui/example_config.json /config/youtube-dl-webui.json
 
 # command to run tests
 script:
-  - python -m youtube_dl_webui
+  - youtube-dl-webui -c /config/youtube-dl-webui.json
